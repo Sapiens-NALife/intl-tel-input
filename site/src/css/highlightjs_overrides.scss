@@ -1,9 +1,0 @@
-/* Highlight.js overrides */
-.hljs {
-  @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
-    background-color: #f6f8fa; /* match GitHub */
-  }
-  @media (prefers-color-scheme: dark) {
-    background-color: #151b23; /* match GitHub */
-  }
-}
