@@ -146,6 +146,26 @@ const getPatchedNumberTypeNames = (numberTypeNames) => {
   return numberTypeNames.concat(additions);
 };
 
+const getLengthOfGeographicalAreaCode = (number, countryCode) => {
+  try {
+    const phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+    const numberObj = phoneUtil.parse(number, countryCode);
+    return phoneUtil.getLengthOfGeographicalAreaCode(numberObj);
+  } catch {
+    return 0;
+  }
+};
+
+const getNationalSignificantNumber = (number, countryCode) => {
+  try {
+    const phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+    const numberObj = phoneUtil.parse(number, countryCode);
+    return phoneUtil.getNationalSignificantNumber(numberObj);
+  } catch {
+    return "";
+  }
+}
+
 //* Check if given number is valid.
 const isValidNumber = (number, countryCode, numberTypeNames) => {
   try {
@@ -241,6 +261,8 @@ goog.exportSymbol("utils.getValidationError", getValidationError);
 goog.exportSymbol("utils.isValidNumber", isValidNumber);
 goog.exportSymbol("utils.isPossibleNumber", isPossibleNumber);
 goog.exportSymbol("utils.getCoreNumber", getCoreNumber);
+goog.exportSymbol("utils.getNationalSignificantNumber",getNationalSignificantNumber);
+goog.exportSymbol("utils.getLengthOfGeographicalAreaCode",getLengthOfGeographicalAreaCode);
 //* Enums
 goog.exportSymbol("utils.numberFormat", numberFormat);
 goog.exportSymbol("utils.numberType", numberType);

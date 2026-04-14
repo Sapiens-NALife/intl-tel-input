@@ -21,6 +21,8 @@ export type ItiUtils = {
     useE164?: boolean,
   ): string;
   getExtension(number: string, iso2: string | undefined): string;
+  getLengthOfGeographicalAreaCode(number: string, iso2: string | undefined): number;
+  getNationalSignificantNumber(number: string, iso2: string | undefined): string;
   getNumberType(number: string, iso2: string | undefined): number;
   getValidationError(number: string, iso2: string | undefined): number;
   isPossibleNumber(
