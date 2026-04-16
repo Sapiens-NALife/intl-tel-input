@@ -106,7 +106,9 @@
     "zone.js": "^0.16.1"
   },
   "files": [
-    "dist/*",
+    "js/*",
+    "css/*",
+    "img/*",
     "react/dist/*",
     "vue/dist/*",
     "angular/dist/*",
@@ -122,24 +124,24 @@
     "url": "https://github.com/jackocnr/intl-tel-input.git"
   },
   "homepage": "https://intl-tel-input.com",
-  "main": "./dist/js/intlTelInput.js",
-  "types": "./dist/js/intlTelInput.d.ts",
+  "main": "./js/intlTelInput.js",
+  "types": "./js/intlTelInput.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/js/intlTelInput.d.ts",
-      "import": "./dist/js/intlTelInput.mjs"
+      "types": "./js/intlTelInput.d.ts",
+      "import": "./js/intlTelInput.mjs"
     },
     "./intlTelInputWithUtils": {
-      "types": "./dist/js/intlTelInput.d.ts",
-      "import": "./dist/js/intlTelInputWithUtils.mjs"
+      "types": "./js/intlTelInput.d.ts",
+      "import": "./js/intlTelInputWithUtils.mjs"
     },
     "./data": {
-      "types": "./dist/js/data.d.ts",
-      "import": "./dist/js/data.mjs"
+      "types": "./js/data.d.ts",
+      "import": "./js/data.mjs"
     },
     "./utils": {
-      "types": "./dist/js/utils.d.ts",
-      "import": "./dist/js/utils.js"
+      "types": "./js/utils.d.ts",
+      "import": "./js/utils.js"
     },
     "./react": {
       "types": "./react/dist/IntlTelInput.d.ts",
@@ -176,23 +178,23 @@
       "import": "./svelte/src/IntlTelInputWithUtils.svelte"
     },
     "./i18n": {
-      "types": "./dist/js/i18n.d.ts",
-      "import": "./dist/js/i18n/index.js"
+      "types": "./js/i18n.d.ts",
+      "import": "./js/i18n/index.js"
     },
     "./i18n/*": {
-      "types": "./dist/js/i18n.d.ts",
-      "import": "./dist/js/i18n/*/index.js"
+      "types": "./js/i18n.d.ts",
+      "import": "./js/i18n/*/index.js"
     },
     "./styles": {
-      "types": "./dist/css/styles.d.ts",
-      "default": "./dist/css/intlTelInput.css"
+      "types": "./css/styles.d.ts",
+      "default": "./css/intlTelInput.css"
     },
     "./*": "./*"
   },
   "typesVersions": {
     "*": {
       ".": [
-        "dist/js/intlTelInput.d.ts"
+        "js/intlTelInput.d.ts"
       ],
       "react": [
         "react/dist/IntlTelInput.d.ts"
