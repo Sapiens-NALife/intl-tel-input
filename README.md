@@ -4,4 +4,4 @@ Steps followed:
  - Installed node v22 using nvm
  - Run "npm install"
  - Run "npm run build"
- - Removed all Folders excluding the dist folder
+ - Replaced the code with files from dist
