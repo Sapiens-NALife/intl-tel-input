@@ -162,7 +162,7 @@ const getNationalSignificantNumber = (number, countryCode) => {
     const numberObj = phoneUtil.parse(number, countryCode);
     return phoneUtil.getNationalSignificantNumber(numberObj);
   } catch {
-    return "";
+    return number;
   }
 }
 
